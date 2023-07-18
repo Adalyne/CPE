@@ -31,7 +31,7 @@ Input：每一列輸入為1~N的N(ex.10代表1~10,100代表1~100)
 Output：最大公因數相加  
 
 Code in Python
-'''ruby
+```ruby
 def GCD(a,b):
     while b != 0:
         t = a % b
@@ -54,5 +54,5 @@ while True:
             continue
     except ValueError:
         print('輸入錯誤')
-'''
+```
 
