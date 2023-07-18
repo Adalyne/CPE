@@ -6,3 +6,5 @@ Given the value of N, you will have to find the value of G. The definition of G 
 Here GCD(i,j) means the greatest common divisor of integer i and integer j.
 
 For those who have trouble understanding summation notation, the meaning of G is given in the following code:
+
+![image](https://github.com/Adalyne/CPE/blob/cd4a06e8ad4c3ab2fca02c7a942cdf267275ec90/CPE49/G%E7%9A%84%E6%BC%94%E7%AE%97%E6%B3%95.png)
