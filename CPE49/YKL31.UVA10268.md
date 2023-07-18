@@ -35,4 +35,10 @@ Sample Output
 
 題意：計算a0xn + a1xn−1 + . . . + an−1x + an.的微分  
 input的資料兩列為一組，每一組的第一列為x值; 第二列為函數的係數a0、a1、a2  
-output為函數的微分
+output為函數的微分  
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
