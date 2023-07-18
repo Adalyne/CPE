@@ -38,7 +38,7 @@ input的資料兩列為一組，每一組的第一列為x值; 第二列為函數
 output為函數的微分  
 
 code in Python
-```
+```ruby
 while True:
     x=int(input())
     if not x: #若沒輸入x，則跳出while迴圈
