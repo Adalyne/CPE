@@ -37,8 +37,22 @@ Sample Output
 input的資料兩列為一組，每一組的第一列為x值; 第二列為函數的係數a0、a1、a2  
 output為函數的微分  
 
+code in Python
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+while True:
+    x=int(input())
+    if not x: #若沒輸入x，則跳出while迴圈
+        break
+    try:
+        a=input().split(' ')
+        f_len=len(a)-1 #function的長度，(-1)是因為function從0開始算
+
+        ans=0
+        for item in a:
+            ans+=int(item)*f_len*(x**(f_len-1))
+            f_len-=1
+
+        print(int(ans))
+    except ValueError:
+        print('輸入錯誤')
 ```
