@@ -32,7 +32,7 @@ Output：最大公因數相加
 
 Code in Python
 ```ruby
-def GCD(a,b):
+def GCD(a,b):  #利用輾轉相除法
     while b != 0:
         t = a % b
         a = b
@@ -41,7 +41,7 @@ def GCD(a,b):
 
 while True:
     N=int(input())
-    if not N:
+    if not N:  #若沒輸入N，則跳出迴圈
         break
     try:
         if(N!=0):
