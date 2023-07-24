@@ -20,17 +20,17 @@ Output
 For each pair of lines, your program should evaluate the derivative of polynomial for the given value x and output it in a single line.
 
  
-Sample Input
-7
-1 -1
-2
-1 1 1
+Sample Input  
+7  
+1 -1  
+2  
+1 1 1  
 
  
 
-Sample Output
-1
-5
+Sample Output  
+1  
+5  
 
 
 題意：計算a0xn + a1xn−1 + . . . + an−1x + an.的微分  
