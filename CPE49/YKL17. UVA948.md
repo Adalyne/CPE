@@ -78,7 +78,7 @@ while True:
                 if tag==1:
                     bit_str+=str(bit)
                 index-=1
-            print(input_num,'=',int(bit_str.replace('\n','').replace('\r','')),'(fib)')  #最後的格式為1=1(fib), 所以將\r\n換掉，以免換行或空格導致格式不對
+            print(input_num,'=',int(bit_str.replace('\n','').replace('\r','')),'(fib)')  #最後的格式為1=1(fib), 所以將#\r\n換掉，以免換行或空格導致格式不對
     except ValueError:
         print('輸入錯誤')
 ```
