@@ -42,5 +42,42 @@ You should output a single line for each of the N integers in the input, with th
 9 = 10001 (fib)   
 10 = 10010 (fib)  
 
-**Code in Python**
+**題意**  
+將10進位的數字換成以Fibonacci base為底的bin  
+所以先將Fibonacci的矩陣儲存起來，運算會比較快  
+**Code in Python**  
+```ruby  
+def fib(n):
+    Fib=list() #因為list可以當一維陣列用，用numpy一維陣列也可
+    Fib.append(0)
+    Fib.append(1)
+    Fib.append(1)
+    for i in range(3,n+1):  
+        Fib.append(Fib[i-1]+Fib[i-2])
+    return Fib
 
+while True:
+    input_num=int(input())
+    if not input_num:
+        break
+    try:
+        fib_n=40  #因為測資的範圍，可以開 40 格就夠 (因為 [40] = 102334155 超過範圍)
+        Fib_list=fib(fib_n)
+        for i in range(1,input_num+1):
+            input_num=int(input())
+            num=input_num
+            index=fib_n
+            bit_str=''
+            tag=0
+            while index!=1:
+                bit=num//Fib_list[index]
+                num=num%Fib_list[index]
+                if bit==1:
+                    tag=1
+                if tag==1:
+                    bit_str+=str(bit)
+                index-=1
+            print(input_num,'=',int(bit_str.replace('\n','').replace('\r','')),'(fib)')  #最後的格式為1=1(fib), 所以將\r\n換掉，以免換行或空格導致格式不對
+    except ValueError:
+        print('輸入錯誤')
+```
