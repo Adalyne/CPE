@@ -15,16 +15,16 @@ The input file contains at most 100 lines of inputs. Each line contains an integ
 Output
 For each line of input produce one line of output. This line contains the value of G for corresponding N.
 
-Sample Input  
-10
-100
-500
-0
+Sample Input   
+10  
+100  
+500  
+0  
 
-Sample Output  
-67
-13015
-442011
+Sample Output   
+67  
+13015  
+442011  
 
 題意：算1-N中彼此的最大公因數相加  
 Input：每一列輸入為1-N的N(ex.10代表1-10,100代表1-100)  
