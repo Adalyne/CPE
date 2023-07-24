@@ -1,4 +1,4 @@
-題目:  
+**題目:**  
 The well known Fibonacci sequence is obtained by starting with 0 and 1 and then adding the two last numbers to get the next one. For example the third number in the sequence is 1 (1=1+0), the forth is 2 (2=1+1), the fifth is 3 (3=2+1) and so on.   
 ![image](https://github.com/Adalyne/CPE/blob/31e436664804d855afde8cf7deb26156c7854755/CPE49/Fibonacci.png)
 
@@ -6,18 +6,18 @@ The sequence appears on many things in our life, in nature, and has a great sign
 Now that we know all this we can prepare a nice way to represent any positive integer. We will use a binary sequence (just zeros and ones) to do that. For example,17 = 1 + 3 + 13 (remember that no two consecutive Fibonacci numbers can be used). Let's write a zero for each Fibonacci number that is not used and one for each one that is used, starting at the right. Then, 17 = 100101. See figure 2 for a detailed explanation. In this representation we should not have zeros at the left, this is, we should only write starting with the first one. In order for you to understand better, note that in this scheme, not using two consecutive Fibonacci numbers means that the binary sequence will not have two consecutive ones. When we use this representation for a number we say that we are using the Fibonaccimal base, and we write it like 17 = 100101 (fib).
 ![image](https://github.com/Adalyne/CPE/blob/5fb1994eccd4eab64d4e7a3031f4a51ce420499f/CPE49/Fibonacci%20base.png).
 
-Description  
+**Description**  
 Given a set of numbers in decimal base, your task is to write them in the Fibonaccimal base.
 
-Input  
+**Input**  
 The first line of input contains a single number N, representing the quantity of numbers that follow ( 1 ≤ N ≤ 500).
 Than follow exactly N lines, each one containing a single positive integer smaller than 100 000 000. These numbers can come in any order.
 
-Output  
+**Output**  
 You should output a single line for each of the N integers in the input, with the format "DEC_BASE = FIB_BASE (fib)". DEC_BASE is the original number in decimal base and FIB_BASE is its representation in Fibonaccimal base. See the sample output for an example.
 
 
-Sanple Input  
+**Sanple Input**  
 10  
 1   
 2   
@@ -30,7 +30,7 @@ Sanple Input
 9  
 10  
 
-Sample Output  
+**Sample Output**  
 1 = 1 (fib)  
 2 = 10 (fib)  
 3 = 100 (fib)  
@@ -42,4 +42,5 @@ Sample Output
 9 = 10001 (fib)   
 10 = 10010 (fib)  
 
+**Code in Python**
 
