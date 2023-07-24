@@ -45,7 +45,7 @@ You should output a single line for each of the N integers in the input, with th
 **題意**  
 將10進位的數字換成以Fibonacci base為底的bin  
 所以先將Fibonacci的矩陣儲存起來，運算會比較快  
-然後像二進位的方式一樣寫法，只記錄整數除法直到數字為零
+然後像二進位的方式一樣寫法，只記錄整數除法直到數字為零  
 **Code in Python**  
 ```ruby  
 def fib(n):
