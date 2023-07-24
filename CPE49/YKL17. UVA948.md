@@ -19,3 +19,30 @@ Output
 
 You should output a single line for each of the N integers in the input, with the format "DEC_BASE = FIB_BASE (fib)". DEC_BASE is the original number in decimal base and FIB_BASE is its representation in Fibonaccimal base. See the sample output for an example.
 
+
+Sanple Input  
+10  
+1   
+2   
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  
+
+Sample Output  
+1 = 1 (fib)  
+2 = 10 (fib)  
+3 = 100 (fib)  
+4 = 101 (fib)  
+5 = 1000 (fib)  
+6 = 1001 (fib)  
+7 = 1010 (fib)  
+8 = 10000 (fib)  
+9 = 10001 (fib)   
+10 = 10010 (fib)  
+
+
