@@ -69,7 +69,7 @@ while True:
             num=input_num
             index=fib_n
             bit_str=''
-            tag=0 #因為不紀錄前面開頭為0，開始數字1後面開始加進str
+            tag=0  #因為不紀錄前面開頭為0，開始數字1後面開始加進str
             while index!=1:
                 bit=num//Fib_list[index]
                 num=num%Fib_list[index]
