@@ -28,7 +28,7 @@ For each pair of lines, your program should evaluate the derivative of polynomia
 
  
 
-**Sample Output**  
+# Sample Output    
 1  
 5  
 
@@ -39,7 +39,7 @@ input的資料兩列為一組，每一組的第一列為x值; 第二列為函數
 output為函數的微分  
 
 # Code 
-** Python**
+**Python**  
 ```ruby
 while True:
     x=int(input())
