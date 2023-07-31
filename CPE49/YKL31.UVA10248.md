@@ -38,7 +38,8 @@ For each pair of lines, your program should evaluate the derivative of polynomia
 input的資料兩列為一組，每一組的第一列為x值; 第二列為函數的係數a0、a1、a2  
 output為函數的微分  
 
-**Code in Python**
+# Code 
+** Python**
 ```ruby
 while True:
     x=int(input())
