@@ -31,8 +31,8 @@ Sample Output
 Input：每一列輸入為1-N的N(ex.10代表1-10,100代表1-100)  
 Output：最大公因數相加  
 
-Code in Python
-```python
+Code in 
+```ruby
 def GCD(a,b):  #利用輾轉相除法
     while b != 0:
         t = a % b
