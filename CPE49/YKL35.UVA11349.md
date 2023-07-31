@@ -41,7 +41,8 @@ N = 3
 Test #1: Symmetric.  
 Test #2: Non-symmetric.  
 
-題意：判斷矩陣是否對秤，但這題的對稱不是課本所定義的矩陣對稱，對稱的定義在題目說，若矩陣index 0 和最後一個的index 相同、 index 1 和倒數第二個index 相同、 index 2 和倒數第三個index 相同... 且元素均大於等於0，則對稱(Symmetric)  
+# 題意  
+判斷矩陣是否對秤，但這題的對稱不是課本所定義的矩陣對稱，對稱的定義在題目說，若矩陣index 0 和最後一個的index 相同、 index 1 和倒數第二個index 相同、 index 2 和倒數第三個index 相同... 且元素均大於等於0，則對稱(Symmetric)  
 ，否則非對稱(Non-symmetric)  
 
 # Code 
