@@ -44,6 +44,38 @@ Test #2: Non-symmetric.
 題意：判斷矩陣是否對秤，但這題的對稱不是課本所定義的矩陣對稱，對稱的定義在題目說，若矩陣index 0 和最後一個的index 相同、 index 1 和倒數第二個index 相同、 index 2 和倒數第三個index 相同... 且元素均大於等於0，則對稱(Symmetric)  
 ，否則非對稱(Non-symmetric)  
 
-Code in Python
+# Code 
+**Python**
+```ruby
+import numpy as np
 
+def detect(arr):
+    flat_arr=arr.flatten()
+    i=0
+    j=np.size(arr)-1
+    tag=0
+    while(i!=j):
+        if(flat_arr[i]!=flat_arr[j] or flat_arr[i]<0):
+            tag=1
+            break
+        print(i,j)
+        i+=1
+        j-=1
+        if((i-1)==j):
+            break
+    return tag
+    
 
+max_num=int(input())
+for num in range(max_num):
+    n=int(input().split(' ')[2])
+    arr=[]
+    for i in range(n):
+        arr.append(list(map(int,input().rstrip().split())))
+    array=np.array(arr)
+    tag=detect(array)
+    if(tag==0):
+        print('Test #{0}: Symmetric.'.format(num+1))
+    else:
+        print('Test #{0}: Non-symmetric.'.format(num+1))
+```
