@@ -10,4 +10,6 @@ CPE 的目標是做為全台灣「程式能力檢定」的標準，有如英文�
 寫程式的介面很難用，輸出答案一定要符合題目給的格式(例如：少寫了\n，系統就會判定錯誤)，所以我都是先用VS code寫好和修改完再貼上去
 
 ## CPE49  
-[YKL17_UVA948](https://github.com/Adalyne/CPE/blob/f5498669ac1c81fc171b1f26d2848dc90f3e8fe7/CPE49/YKL17.%20UVA948.md)
+[YKL17_UVA948](https://github.com/Adalyne/CPE/blob/f5498669ac1c81fc171b1f26d2848dc90f3e8fe7/CPE49/YKL17.%20UVA948.md)  
+[YKL29_UVA11417](https://github.com/Adalyne/CPE/blob/a8a09f99e1cf222a10f549cfb3861145e14ace55/CPE49/YKL29.UVA11417.md)  
+
