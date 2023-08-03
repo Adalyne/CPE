@@ -67,8 +67,8 @@ def detect(arr):
     return tag
     
 
-max_num=int(input())
-for num in range(max_num):
+max_input=int(input())
+for num in range(max_input):
     n=int(input().split(' ')[2])
     arr=[]
     for i in range(n):
