@@ -21,16 +21,16 @@ No carry operation.
 **Python**  
 ```ruby
 def over_digits(x,y):
-    if(len(str(x))>len(str(y))):
+    if(len(str(x))>len(str(y))):  #先找出哪個數的位數最大
         iter=len(str(x))
         num=str(x)
     else:
         iter=len(str(y))
         num=str(y)
-    count=0
-    sums=str(x+y)
+    count=0  #存放進位的個數
+    sums=str(x+y)  
     for i in range(iter-1,-1,-1):
-        if(iter<len(sums)):
+        if(iter<len(sums)):  #因為sums的位數比原來相加的兩個數的位數還要大，會有index不一致的問題，所以要分開做
             if(num[i]>sums[i+1]):
                 count+=1
         else:
