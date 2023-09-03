@@ -13,9 +13,10 @@ For each line of input except the last you should compute and print the number o
 No carry operation.  
 3 carry operations.  
 1 carry operation.  
-#題意
+# 題意
 有多少位數進位  
-
+以數學的基本邏輯，若有位數進位，則該位數會比原來相加的數還要小(e.g 29+36=65，其中個位數9+6進位後為5，5<9  and 5<6)  
+0加上任何數都不會進位  
 # Code 
 **Python**  
 ```ruby
