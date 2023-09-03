@@ -13,3 +13,40 @@ For each line of input except the last you should compute and print the number o
 No carry operation.  
 3 carry operations.  
 1 carry operation.  
+#題意
+有多少位數進位  
+
+# Code 
+**Python**  
+```ruby
+def over_digits(x,y):
+    if(len(str(x))>len(str(y))):
+        iter=len(str(x))
+        num=str(x)
+    else:
+        iter=len(str(y))
+        num=str(y)
+    count=0
+    sums=str(x+y)
+    for i in range(iter-1,-1,-1):
+        if(iter<len(sums)):
+            if(num[i]>sums[i+1]):
+                count+=1
+        else:
+            if(num[i]>sums[i]):
+                count+=1
+    return count
+
+while(True):
+    n,m=map(int,input().split(' '))
+    if(n==0 and m==0):
+        break
+    else:
+        carry_digit_num=over_digits(n,m)
+        if(carry_digit_num==0):
+            print('No carry operation.')
+        elif(carry_digit_num==1):
+            print('1 carry operation.')
+        else:
+            print(carry_digit_num,'carry operations.')
+
